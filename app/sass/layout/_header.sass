@@ -1,0 +1,470 @@
+.header 
+  padding: 30px 0px
+
+.header__row
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.header__logo
+  width: 86px
+  img 
+    width: 100%
+  a 
+    display: block
+
+.header__nav
+  width: 526px
+
+
+.header__nav-list
+  margin: 0
+  padding: 0
+  list-style: none 
+  display: flex
+  justify-content: space-between
+
+.header__nav-link
+  font-size: 14px
+  padding: 3px
+  &:hover 
+    color: #3D6DEB
+
+.header__phone-link
+  font-size: 14px
+  color: #3822D3
+  font-weight: 600
+  
+
+// ------------------------ section-top ---------------------------------
+
+.section-top
+  // min-height: 910px
+  padding: 190px 0px
+  background: url('../img/section-top-bg.jpg') no-repeat center
+  background-size: cover
+  color: #fff
+
+.section-top__col
+  width: 410px
+
+.section-top__title 
+  font-size: 60px
+  line-height: 1.3
+  font-weight: 900
+  margin-bottom: 30px
+
+.section-top__subtitle 
+  font-size: 20px
+  margin-bottom: 50px
+
+.section-top__btn
+  width: 160px
+  margin-bottom: 50px
+
+.section-top__list
+  padding: 0
+  margin: 0
+  list-style: none 
+
+.section-top__item
+  position: relative
+  margin-bottom: 20px 
+  padding-left: 40px
+  &::before 
+    content: ''
+    position: absolute
+    left: 0
+    top: 50%
+    transform: translate(0, -50%)
+    width: 20px
+    height: 20px
+    background: url('../img/section-top-list.svg') no-repeat center
+
+// ------------------------ section-1 ---------------------------------
+
+.section-1
+  padding: 130px 0
+  background-color: #fff
+
+.section-1__title
+  max-width: 530px 
+  margin-bottom: 50px
+
+  
+
+// ------------------------ section-2 ---------------------------------
+
+.section-2
+  padding: 130px 0
+  background-color: #F9F9FE
+
+.section-2__title-wrap 
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin-bottom: 46px
+
+.section-2__title
+  width: 520px
+
+.section-2__subtitle 
+  width: 520px
+
+.section-2__title-bottom
+  margin: 0 -10px
+  margin-bottom: 46px
+  font-weight: 700
+  color: #20213F
+
+.section-2__row 
+  display: flex
+  justify-content: space-between
+  margin-bottom: 130px
+
+.section-2__col
+  width: 350px
+  
+.section-2__item
+  position: relative
+  padding: 105px 30px 57px
+  background: #FFFFFF
+  border: 1px solid #E6EAEF
+  border-radius: 6px
+  margin-bottom: 25px
+  &::before 
+    position: absolute
+    top: -24px
+    right: 20px
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 48px 
+    height: 48px 
+    font-size: 20px
+    font-weight: 700
+    color: #20213F
+    border-radius: 50%
+    background-color:  #E1DEF2
+  &::after 
+    position: absolute
+    top: 30px
+    left: 30px
+    content: ''
+    width: 45px
+    height: 45px
+    background-repeat: no-repeat
+    background-position: center
+  &.item--1
+    &::before 
+      content: '1'
+    &::after
+      background-image: url('../img/section-2-item-1.png')
+  &.item--2
+    &::before 
+      content: '2'
+    &::after
+      background-image: url('../img/section-2-item-2.png')
+  &.item--3
+    &::before 
+      content: '3'
+    &::after
+      background-image: url('../img/section-2-item-3.png')
+
+
+.section-2__item-title
+  font-size: 20px
+  font-weight: 700
+  color: #20213F
+  margin-bottom: 14px
+
+
+// ------------------------ section-3 ---------------------------------
+
+.section-3 
+  padding: 130px 0px
+  background-color: #fff
+
+.section-3__title
+  margin-bottom: 20px
+
+.section-3__text
+  margin-bottom: 55px
+
+.section-3__subtitle
+  margin-bottom: 68px 
+  font-weight: 700
+  color: #20213F
+
+.section-3__row 
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  margin-bottom: -50px
+
+.section-3__item
+  display: flex
+  align-items: center 
+  justify-content: center
+  width: 14.28%
+  margin-bottom: 50px
+  &:hover 
+    img 
+      transform: scale(1.05)
+
+// ------------------------ section-4 ---------------------------------
+
+.section-4__top
+  min-height: 400px
+  background: #3822D3 url('../img/section-4-bg.png') no-repeat center 
+  background-size: cover
+
+.section-4__bottom
+  padding-bottom: 110px 
+  background-color: #F9F9FE
+
+.section-4__row
+  display: flex
+  justify-content: space-between
+
+.section-4__form-wrap
+  margin-top: -200px
+  padding: 60px 50px 30px
+  width: 730px
+  margin-right: 30px
+  background: #FFFFFF
+  border: 1px solid #E6EAEF
+  border-radius: 6px
+
+.section-4__title
+  margin-bottom: 60px
+
+.section-4__form
+  font-size: 14px
+
+.section-4__form-row
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  margin: 0 -15px
+
+.section-4__form-label
+  width: 50%  
+  padding: 0px 15px
+  margin-bottom: 30px
+
+.section-4__text-name
+  display: block
+  font-weight: 600
+  color: #20213F
+  margin-bottom: 15px
+  b 
+    color: #F83600
+  
+
+.section-4__text-input,
+.section-4__select
+  padding-bottom: 10px
+  width: 100%
+  border: none
+  outline: none
+  border-bottom: 1px solid #E6EAEF
+  cursor: pointer
+
+.section-4__phone-wrap
+  display: flex
+
+.section-4__phone-code
+  display: inline-block
+  border-bottom: 1px solid #E6EAEF
+  padding-bottom: 10px
+  padding-right: 30px
+  margin-right: 15px
+
+.section-4__select-label
+  display: block
+  margin-bottom: 30px
+
+.section-4__textarea-label
+  display: block
+
+.section-4__textarea
+  height: 90px
+  width: 100%
+  border: none
+  outline: none
+  border-bottom: 1px solid #E6EAEF
+  margin-bottom: 30px
+
+.section-4__form-btn
+  width: 160px
+  float: right
+
+
+// --------- section-4__contacts
+
+.section-4__contacts
+  align-self: flex-end
+  width: 350px 
+  height: 215px
+  padding: 50px 30px
+  background: #20213F
+  border-radius: 6px
+  color: #fff
+  font-size: 14px
+
+.section-4__contacts-item
+  display: flex
+  justify-content: space-between
+  margin-bottom: 20px
+
+.section-4__contacts-name
+  opacity: .7
+
+.section-4__contacts-value
+  max-width: 160px
+  text-align: right
+
+// ------------------------ section-5 ---------------------------------
+
+.section-5
+  padding: 130px 0px
+  background: #fff
+
+.section-5__view
+  margin-top: -20px
+
+.section-5__view-link
+  position: absolute
+  display: block
+  padding-right: 25px
+  color: #F99C1C
+  font-size: 14px 
+  &::after 
+    position: absolute
+    content: ''
+    top: 50%
+    right: 0
+    transform: translate(0, -50%)
+    width: 14px
+    height: 9px
+    background: url('../img/view-arrow.svg') no-repeat center
+
+
+
+.section-5__row 
+  display: flex
+  justify-content: space-between
+
+.section-5__left
+  width: 215px
+  margin-right: 70px
+
+.section-5__title
+  margin-bottom: 20px
+
+.section-5__news-row
+  display: flex
+  flex-direction: column
+
+.section-5__news-item
+  margin-bottom: 20px
+  line-height: 24px
+  &.active 
+    color: #3822D3
+
+.section-5__right
+  width: 825px
+
+.section-5__slider
+  display: flex
+
+
+.section-5__item
+  width: 255px
+  margin-right: 30px
+  &:last-child 
+    margin-right: 0px
+
+.section-5__item-img
+  border-radius: 6px
+  overflow: hidden
+  margin-bottom: 20px
+  a 
+    display: block
+  img 
+    width: 100%
+
+.section-5__item-top
+  display: flex 
+  justify-content: space-between
+  margin-bottom: 10px
+
+.section-5__item-title
+  text-transform: uppercase
+  color: #3822D3
+  font-size: 12px
+  font-weight: 600
+
+.section-5__item-date
+  font-size: 12px
+
+.section-5__item-text
+  font-weight: 700
+  color: #20213F
+
+// ------------------------ footer ---------------------------------
+
+.footer
+  padding: 74px 0px 77px 
+  background-color: #20213F
+
+.footer__row
+  display: flex
+
+.footer__logo
+  margin-right: 150px
+  margin-left: 50px
+  width: 86px
+  img 
+    width: 100%
+  a 
+    display: block
+
+.footer__right
+  width: 526px
+
+.footer__nav-list 
+  margin: 0
+  padding: 0
+  list-style: none 
+  display: flex
+  justify-content: space-between
+  margin-bottom: 54px
+
+.footer__nav-link
+  font-size: 14px
+  padding: 3px
+  color: #fff
+  &:hover 
+    color: #3D6DEB
+
+.footer__social-wrap
+  display: flex
+  justify-content: space-between
+  width: 190px
+  margin: 0 auto 
+
+.footer__social
+  display: block
+  width: 22px 
+  height: 22px
+  background-repeat: no-repeat
+  background-position: center
+  &.ins
+    background-image: url('../img/social-ins.svg')
+  &.fb
+    background-image: url('../img/social-fb.svg')
+  &.tw
+    background-image: url('../img/social-tw.svg')
+

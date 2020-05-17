@@ -1,8 +1,6 @@
-# Start template
+# SiteShop
 
-Start template with (optional)
 - normalize.css
-- bootstrap-grid.min.css
 - jquery-3.4.1.min.js
 
 Usage 
