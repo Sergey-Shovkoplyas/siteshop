@@ -20,6 +20,7 @@
 	<!-- Custom Browsers Color End -->
 
 	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/main.min.css">
 
 </head>
@@ -28,8 +29,17 @@
 	<header class="header">
 		<div class="container container--1320">
 			<div class="header__row">
-				<div class="header__logo">
-					<a href="#"><img src="img/logo.svg" alt="SiteShop"></a>
+				<div class="header__left">
+					<div class="header__nav-btn">
+						<div class="nav-btn">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+					<div class="header__logo">
+						<a href="#"><img src="img/logo.svg" alt="SiteShop"></a>
+					</div>
 				</div>
 				<div class="header__nav">
 					<ul class="header__nav-list">
@@ -38,7 +48,13 @@
 						<li class="header__nav-item"><a class="header__nav-link" href="#">Prețuri</a></li>
 						<li class="header__nav-item"><a class="header__nav-link" href="#">Clienți</a></li>
 						<li class="header__nav-item"><a class="header__nav-link" href="#">Contacte</a></li>
-						<li class="header__nav-item"><a class="header__nav-link" href="#">Ro</a></li>
+						<li class="header__nav-item">
+							<a class="header__nav-link language-btn">Ro</a>
+							<ul class="language">
+								<li><a href="#">Ru</a></li>
+								<li><a href="#">It</a></li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 				<div class="header__phone">
@@ -86,8 +102,7 @@
 				<div class="section-2__subtitle">Suntem specializati in oferirea solutiilor de Magazin Online pentru IMM-urile din Republica Moldova.</div>
 			</div>
 			<div class="section-2__title-bottom">Pentru garantarea termenilor scurti de dare in exploatare, participam la crearea solutiilor Ecommerce online in toate etapele necesare.</div>
-			<div class="section-2__row">
-
+			<div class="section-2__row section-2__slider">
 				<div class="section-2__col">
 					<div class="section-2__item  item--1">
 						<div class="section-2__item-title">Consulting</div>
@@ -246,7 +261,7 @@
 									<input class="section-4__text-input" type="text" placeholder="Full name">
 								</label>
 
-								<label class="section-4__form-label">
+								<label class="section-4__form-label companie">
 									<span class="section-4__text-name">Сompanie (optional)</span>
 									<input class="section-4__text-input" type="text" placeholder="Сompanie">
 								</label>
@@ -256,7 +271,7 @@
 									<input class="section-4__text-input" type="text" placeholder="E-mail">
 								</label>
 
-								<label class="section-4__form-label">
+								<label class="section-4__form-label phone">
 									<span class="section-4__text-name">Numar de telefon (optional)</span>
 									<div class="section-4__phone-wrap">
 										<span class="section-4__phone-code">+373</span>
@@ -266,7 +281,7 @@
 
 							</div>
 
-							<label class="section-4__select-label">
+							<label class="section-4__select-label pach">
 								<span class="section-4__text-name">Pachetul (optional)</span>
 								<select name="#" class="section-4__select">
 									<option value="#">Single product website (de la € 850)</option>
@@ -379,7 +394,13 @@
 						<li class="footer__nav-item"><a class="footer__nav-link" href="#">Prețuri</a></li>
 						<li class="footer__nav-item"><a class="footer__nav-link" href="#">Clienți</a></li>
 						<li class="footer__nav-item"><a class="footer__nav-link" href="#">Contacte</a></li>
-						<li class="footer__nav-item"><a class="footer__nav-link" href="#">Ro</a></li>
+						<li class="footer__nav-item">
+							<a class="footer__nav-link language-btn">Ro</a>
+							<ul class="language">
+								<li><a href="#">Ru</a></li>
+								<li><a href="#">It</a></li>
+							</ul>
+						</li>
 					</ul>
 					<div class="footer__social-wrap">
 						<a href="#" class="footer__social ins"></a>
@@ -393,6 +414,7 @@
 
 	
 	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/slick.min.js"></script>
 	<script src="js/common.js"></script>
 
 </body>
