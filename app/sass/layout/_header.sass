@@ -194,6 +194,7 @@
 .section-2__title
   width: 520px
   +media-sm 
+    text-align: center
     width: 100%
     margin-bottom: 30px
   
@@ -218,7 +219,7 @@
   justify-content: space-between
   margin-bottom: 130px
   +media-sm 
-    margin-bottom: 0px
+    margin-bottom: 50px
   
 .section-2__col
   width: 350px
@@ -312,6 +313,121 @@
   .slick-active
     button 
       background-color: #3822D3
+
+// ------------------.section-2__table
+
+
+.section-2__table-wrap
+  .row 
+    display: flex
+    justify-content: space-between
+  .col
+    width: 100%
+    border-right: 1px solid #E6EAEF
+    border-bottom: 1px solid #E6EAEF
+  .col:first-child
+    width: 305px
+    flex-shrink: 0
+  .col:last-child 
+    border-right: none
+  .row:last-child 
+    .col
+      border-bottom: none
+  i 
+    position: relative
+    display: flex
+    justify-content: center 
+    align-items: center
+    position: relative
+    width: 20px
+    height: 100%
+    margin: 0 auto
+    font-size: 0
+    &::before
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      content: ''
+      width: 20px
+      height: 20px
+      background: url('../img/check.svg')
+
+  +media-lg 
+    overflow-x: scroll
+
+.section-2__table-head,
+.section-2__table-body 
+  width: 1110px
+  border: 1px solid #E6EAEF
+  border-radius: 6px
+  margin-bottom: 10px
+
+.section-2__table-body 
+  .col
+    padding: 22px
+
+.section-2__table-head
+  .col
+    height: 260px
+    padding: 15px
+    padding-top: 20px
+  .col:first-child 
+    padding: 35px 25px
+  +media-sm 
+    .col 
+      height: 200px
+      padding: 13px
+      padding-top: 10px
+    .col:first-child 
+      padding: 25px
+
+.section-2__head-title
+  margin-bottom: 25px
+
+.section-2__head-product
+  text-align: center
+  font-weight: 600
+  color: #20213F
+  margin-bottom: 35px
+  +media-sm 
+    margin-bottom: 10px
+
+.section-2__head-price
+  font-size: 20px
+  font-weight: 700
+  color: #20213F
+  text-align: center
+  margin-bottom: 40px
+  .dela
+    font-size: 14px
+    font-weight: 500
+    margin-right: 5px
+  .dela--sale
+    color: #787685
+    span 
+      text-decoration: line-through
+  +media-sm 
+    margin-bottom: 15px
+
+.section-2__head-btn
+  margin-bottom: 7px
+  .button 
+    padding: 13px 20px
+  .button:hover 
+    background-color: #3623BF
+    color: #F99C1C
+
+
+.section-2__head-sapta 
+  color: #787685
+  font-size: 14px 
+  font-weight: 600
+  text-align: center
+
+  
+
+
 
 
 
@@ -699,3 +815,93 @@
   &.tw
     background-image: url('../img/social-tw.svg')
 
+
+// ------------------------ popup ---------------------------------
+
+.popup-wrap
+  opacity: 0
+  position: fixed
+  z-index: -1
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  background: rgba(51, 45, 96, 0.4)
+  &.active 
+    opacity: 1
+    z-index: 100
+
+.popup-close
+  width: 22px
+  height: 22px
+  position: absolute
+  top: 17px
+  right: 17px
+  cursor: pointer
+  &::before, 
+  &::after 
+    content: ''
+    position: absolute
+    top: 50%  
+    width: 22px
+    height: 1px 
+    background-color: #E6EAEF
+  &::before
+    transform: rotate(45deg)
+  &::after
+    transform: rotate(-45deg)
+  +media-sm 
+    top: 10px 
+    right: 27px
+    
+  
+
+.popup
+  position: absolute
+  width: 730px 
+  height: 730px
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  box-shadow: 0px 4px 45px rgba(0, 0, 0, 0.15)
+  .section-4__title
+    float: left
+    margin-bottom: 15px
+  h2 
+    font-size: 25px
+  .section-4__form-btn
+    float: none
+    margin: 0 auto
+    .button 
+      margin: 0 auto
+  .section-4__form-wrap
+    margin-top: 0
+  +media-sm 
+    top: 65%
+    width: 100% 
+    padding: 0 15px
+    .section-4__form-wrap
+      width: 100% 
+    .popup__subtitle
+      margin-bottom: 20px
+    .section-4__form-label
+      margin-bottom: 20px
+    .section-4__textarea
+      margin-bottom: 20px
+      height: 80px
+
+.popup__subtitle
+  font-size: 14px
+  margin-bottom: 55px
+  max-width: 545px
+  clear: both
+
+.popup__price
+  float: right
+  font-size: 24px
+  color: #20213F
+  font-weight: bold
+  span 
+    margin-right: 5px
+    font-size: 14px
+    font-weight: 500

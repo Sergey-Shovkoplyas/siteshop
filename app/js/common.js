@@ -15,6 +15,17 @@ $( document ).ready(function() {
 		$(this).next('.language').toggleClass('active');
 	});
 
+	// ----------------- open/close popup-------------
+
+	$('.section-2__head-btn').on('click', function(e){
+		e.preventDefault();
+		$('.popup-wrap').addClass('active');
+		$('.popup-close').removeClass('active');
+	});
+	$('.popup-close').on('click', function(e){
+		$('.popup-wrap').removeClass('active');
+	});
+
 	// -------------------- initialize slider on mobile --------------------
 
 	$('.section-2__slider').slick({
