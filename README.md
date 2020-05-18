@@ -1,5 +1,9 @@
 # SiteShop
 
+- https://sergey-shovkoplyas.github.io/siteshop/app/index.html
+- https://sergey-shovkoplyas.github.io/siteshop/app/blog.html
+- https://sergey-shovkoplyas.github.io/siteshop/app/detail.html
+
 - normalize.css
 - jquery-3.4.1.min.js
 

@@ -1,0 +1,124 @@
+.blog
+  padding: 100px 0px  130px
+  background-color: #F9F9FE
+  +media-sm 
+    padding: 90px 0px 50px
+.blog__title 
+  margin-bottom: 82px
+  text-align: center
+  +media-sm 
+    margin-bottom: 30px
+
+
+.blog__category
+  max-width: 670px
+  margin: 0 auto
+  display: flex
+  justify-content: space-between
+  margin-bottom: 40px
+  +media-sm 
+    flex-wrap: wrap
+
+.blog__category-item
+  font-size: 20px
+  &.active,
+  &:hover 
+    color: #321FBE
+  +media-sm 
+    margin-bottom: 10px
+
+.blog__img
+  position: relative
+  margin-bottom: 120px
+  img 
+    width: 100%
+  +media-md 
+    height: 375px
+    overflow: hidden
+    img 
+      height: 100%
+      width: auto
+  +media-sm 
+    margin: 0 -15px
+    margin-bottom: 30px
+    img 
+      margin-left: -450px
+    
+    
+
+.blog__img-title-wrap
+  position: absolute
+  left: 30px
+  bottom: 30px
+  width: 545px
+  padding: 40px
+  background-color: #321FBE
+  +media-sm 
+    text-align: center
+    margin: 0 auto
+    left: 50%
+    bottom: 20px
+    transform: translate(-50%, 0)
+    width: 90%
+    padding: 20px 14px 30px
+
+.blog__img-text
+  font-weight: 600
+  font-size: 12px
+  line-height: 24px
+  text-transform: uppercase
+  color: #F99C1C
+  margin-bottom: 15px
+
+.blog__img-title
+  font-size: 25px 
+  font-weight: 700
+  color: #fff
+  +media-sm   
+    font-size: 20px
+
+.blog__row
+  display: flex
+  margin: 0 -15px
+  flex-wrap: wrap
+
+.blog__item
+  width: 33.33%
+  padding: 0 15px
+  margin-bottom: 70px
+  +media-sm 
+    width: 100%
+    margin-bottom: 30px
+
+
+.blog__pagination
+  width: 193px
+  margin: 0 auto
+  display: flex
+  justify-content: space-between
+  align-items: center
+  font-size: 14px
+  color: #20213F
+
+.blog__pag-list
+  padding: 0
+  margin: 0
+  list-style: none 
+  display: flex
+  justify-content: space-between
+  align-items: center
+  a 
+    padding: 3px
+  li 
+    margin-right: 10px
+  li:last-child 
+    margin-right: 0
+  li.active 
+    width: 36px
+    height: 36px
+    display: flex
+    justify-content: center
+    align-items: center
+    color: #fff
+    background-color: #321FBE
+    border-radius: 50%

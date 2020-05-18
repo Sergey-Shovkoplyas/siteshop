@@ -55,4 +55,27 @@ $( document ).ready(function() {
     ]
 	});
 
+	$('.detail__slider').slick({
+		arrows: true,
+		infinite: false,
+		slidesToShow: 3,
+		prevArrow: $('.detail__slider-prev'),
+		nextArrow: $('.detail__slider-next'),
+		// mobileFirst: true,
+    responsive: [
+			{
+				breakpoint: 767,
+				settings: {
+					slidesToShow: 1,
+				}
+			},
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 2,
+				}
+			},
+    ]
+	});
+
 });
