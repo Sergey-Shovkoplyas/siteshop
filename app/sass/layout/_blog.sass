@@ -9,6 +9,8 @@
   +media-sm 
     margin-bottom: 30px
 
+.blog__category-wrap
+  overflow-x: auto
 
 .blog__category
   max-width: 670px
@@ -18,12 +20,17 @@
   margin-bottom: 40px
   +media-sm 
     flex-wrap: wrap
+    width: 550px
+    justify-content: flex-start
 
 .blog__category-item
   font-size: 20px
+  margin-right: 25px
   &.active,
   &:hover 
     color: #321FBE
+  &:last-child
+    margin-right: 0px
   +media-sm 
     margin-bottom: 10px
 
