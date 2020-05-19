@@ -26,6 +26,19 @@ $( document ).ready(function() {
 		$('.popup-wrap').removeClass('active');
 	});
 
+	// ----------------- table-mobile show more -------------
+
+	$('.table-mobile__more').on('click', function(){
+		let $sublist = $(this).parent('.table-mobile__body').find('.table-mobile__body-list.sublist');
+		$sublist.slideToggle();
+		$(this).toggleClass('active');
+		if ($(this).is('.active')) {
+			$(this).find('a').html('Show less');
+		} else {
+			$(this).find('a').html('Show more');
+		}
+	});
+
 	// -------------------- initialize slider on mobile --------------------
 
 	$('.section-2__slider').slick({

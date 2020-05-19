@@ -319,7 +319,7 @@
     .slick-dots 
       top: 400px
 
-// ------------------.section-2__table
+// ------------------.section-2__table desctop
 
 
 .section-2__table-wrap
@@ -361,6 +361,8 @@
 
   +media-lg 
     overflow-x: scroll
+  +media-sm 
+    display: none
 
 .section-2__table-head,
 .section-2__table-body 
@@ -448,11 +450,134 @@
       width: 9px
       height: 11px
       background: url('../img/print-arrow.svg')
+  +media-sm 
+    display: none
+
+// ------------------.table-mobile MOBILE
+
+.table-mobile
+  clear: both
+  display: none
+  +media-sm 
+    display: block
+
+.table-mobile__top
+  display: flex 
+  justify-content: space-between
+  margin-bottom: 30px
+
+.table-mobile__title
+  h2
+    font-size: 25px
+
+.table-mobile__print
+  a 
+    position: relative
+    padding-right: 14px
+    display: block
+    padding-right: 
+    color: #F99C1C
+    &::after 
+      position: absolute
+      top: 5px
+      right: 0
+      content: ''
+      width: 9px
+      height: 11px
+      background: url('../img/print-arrow.svg')
+
+.table-mobile__row-wrap
+  overflow-x: scroll
+  margin-right: -15px
+
+.table-mobile__row
+  display: flex
+
+.table-mobile__item
+  background: #FFFFFF
+  border: 1px solid #E6EAEF
+  border-radius: 6px
+  flex-shrink: 0
+  margin-right: 15px
+  width: 300px
+
+.table-mobile__head
+  padding: 20px 28px 15px
+  text-align: center
+  border-bottom: 1px solid #E6EAEF
+
+.table-mobile__head-title
+  font-weight: 600
+  color: #20213F
+  margin-bottom: 10px
+
+.table-mobile__head-price
+  font-weight: 700
+  color: #20213F
+  font-size: 24px
+  margin-bottom: 15px
+  span 
+    font-size: 14px
+    font-weight: 500
+
+.table-mobile__head-btn
+  margin-bottom: 10px
+
+.table-mobile__head-septa
+  font-size: 14px
+  font-weight: 400
+  span 
+    font-weight: 600
 
 
-  
+.table-mobile__body
+  position: relative
+  padding: 28px 10px 60px
 
+.table-mobile__body-list
+  padding: 0
+  margin: 0
+  list-style: none
+  &.sublist
+    display: none
+  li
+    position: relative
+    padding-left: 30px
+    font-size: 14px
+    margin-bottom: 20px
+    &::before 
+      position: absolute
+      content: ''
+      top: 3px
+      left: 0
+      width: 16px
+      height: 16px
+      background: url('../../img/check.svg') no-repeat center 
+      background-size: cover
 
+.table-mobile__more
+  position: absolute
+  left: 50%
+  bottom: 25px
+  transform: translate(-50%, 0)
+  text-align: center
+  &.active 
+    a::after
+      transform: rotate(180deg)
+  a
+    position: relative
+    padding-right: 14px
+    display: inline-block
+    padding-right: 
+    color: #F99C1C
+    &::after 
+      position: absolute
+      top: 7px
+      right: 0
+      content: ''
+      width: 9px
+      height: 11px
+      background: url('../img/print-arrow.svg')
 
 
 
