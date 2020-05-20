@@ -1032,18 +1032,28 @@
   .section-4__form-wrap
     margin-top: 0
   +media-sm 
-    top: 65%
+    top: 50px 
+    transform: translate(-50%, 0)
     width: 100% 
     padding: 0 15px
+    h2 
+      font-size: 19px
+    .section-4__title
+      margin-bottom: 0px
     .section-4__form-wrap
       width: 100% 
+      padding-bottom: 15px
     .popup__subtitle
-      margin-bottom: 20px
+      margin-bottom: 10px
     .section-4__form-label
-      margin-bottom: 20px
+      margin-bottom: 10px
     .section-4__textarea
-      margin-bottom: 20px
-      height: 80px
+      margin-bottom: 10px
+      height: 50px
+    .section-4__text-name
+      margin-bottom: 10px
+    .button 
+      padding: 10px 30px
   +media-374
     .section-4__title
       margin-bottom: 0px
@@ -1051,15 +1061,16 @@
       margin-bottom: 10px
     .section-4__form-label
       margin-bottom: 10px
-    .section-4__textarea
-      margin-bottom: 10px
-      height: 60px
+
 
 .popup__subtitle
   font-size: 14px
   margin-bottom: 55px
   max-width: 545px
   clear: both
+  +media-sm 
+    font-size: 13px
+
 
 .popup__price
   float: right
@@ -1070,3 +1081,5 @@
     margin-right: 5px
     font-size: 14px
     font-weight: 500
+  +media-sm 
+    font-size: 18px
